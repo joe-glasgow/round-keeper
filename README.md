@@ -3,7 +3,7 @@
 ## Installation
 
 This project requires [Node](http://nodejs.org) Version 5 or greater installed on the users machine in order to install the node packages required.
-It is advised that the user install [gulp](http://gulpjs.org) and [browserify](http://browserify.org) globally using the command:
+It is advised that the user install [gulp](http://gulpjs.org/getting-started.html) and [browserify](http://browserify.org/#install) globally using the command:
 
     npm install -g gulp browserify
 
@@ -19,7 +19,7 @@ The application will first need to be build using two mains tasks in gulp, both 
 
 ## Start a server
 
-Spin up a localhost by using the following [python](http://python.org) command:
+Spin up a localhost by using the following [python](https://www.python.org/) command:
 
     python -m SimpleHTTPServer [port]
 
