@@ -29,7 +29,7 @@ e.g.
 
  Simply visit [localhost:8000](http://localhost:8000) to view the application
 
- ### Notes
+ ##Notes
 
  The prototype application doesn't included any persistent state such as localStorage.
 
