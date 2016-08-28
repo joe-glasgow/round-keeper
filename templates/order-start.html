@@ -1,0 +1,18 @@
+<!-- Add a round -->
+<section class="js-add-round page-wrap component component--border-black component__rounded">
+    <div class="u-1/1 layout--flush"><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <span ng-click="addRound()" class="icon icon__large icon--add">Add a round</span>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <h2>Add a round!</h2>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item"><!-- --></div><!--
+--></div><!--
+--><div class="u-1/1 layout--flush"><!--
+--><div class="u-1/1 layout__item"> <table class="u-1/1">
+    <tr><td class="row-heading"><em>Total number of drinks:</em></td><td><!-- spacer --></td><td><span ng-bind="totalNumberOfOrders" ng-class="drink-total"></span></td></tr>
+    <tr><td class="row-heading"><em>Total cost of orders:</em></td><td><!-- spacer --></td><td>£<span ng-bind="totalCostOfTab | currency: ''" ng-class="cost-total"></span></td></tr>
+</table></div><!--
+--></div>
+</section>

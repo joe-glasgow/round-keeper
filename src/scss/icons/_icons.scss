@@ -1,0 +1,38 @@
+@import "../variables/spacing";
+/*icon baseline*/
+.icon {
+  text-indent: -9999px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative;
+  line-height:0.5;
+  &:after{
+    position: absolute;
+    width: $small-area;
+    height: $small-area;
+    font-size: 2em;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+    cursor: pointer
+  }
+}
+
+/*icon variations*/
+.icon--add {
+  &:after {
+    content: '\002B';
+  }
+}
+
+.icon--remove {
+  &:after {
+    content: '\002D';
+  }
+}
+/*icon sizes*/
+.icon__large {
+  font-size: 3em;
+}

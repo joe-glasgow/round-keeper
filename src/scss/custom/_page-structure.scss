@@ -1,0 +1,21 @@
+@import "../../bower_components/inuit-responsive-tools/tools.responsive";
+@import "../variables/spacing";
+@import "../variables/colours";
+
+/* Wrap page container*/
+.page-wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: $gutter-large;
+  @include media-query("palm") {
+    padding: $gutter-small;
+  }
+}
+
+/* component styles */
+.component--border-black {
+  border: 1px solid #000;
+  margin: $gutter-small auto;
+  border-left: 0;
+  border-right: 0;
+}

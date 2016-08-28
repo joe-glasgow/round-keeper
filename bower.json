@@ -1,0 +1,28 @@
+{
+  "name": "fantasy-pub-app",
+  "description": "fantasy pub app",
+  "main": "app.js",
+  "authors": [
+    "Joe Morrison"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-starter-kit": "^0.2.9"
+  },
+  "devDependencies": {
+    "inuit-responsive-settings": "^0.1.5",
+    "inuit-buttons": "^0.4.2",
+    "inuit-layout": "^0.3.2",
+    "inuit-widths": "^0.4.2",
+    "inuit-widths-responsive": "^0.2.2",
+    "inuit-headings": "^0.3.1"
+  }
+}

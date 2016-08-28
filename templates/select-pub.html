@@ -1,0 +1,27 @@
+<!-- pick your pub -->
+<section class="js-pub-select page-wrap component component--border-black">
+    <div class="u-1/1 layout--flush layout--center"><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <span ng-click="cancelOrder()" class="icon icon__large icon--remove">Remove this round</span>
+        <p>Round <span ng-bind="currentRound"></span></p>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <h2>Pick your pub</h2>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <form ng-submit="pubChosen($event)" class="u-1/1 ui-form">
+            <table class="u-1/1">
+                <tr class="detail-row">
+                    <td>
+                        <select class="u-1/1" ng-model="selectedPub" ng-options="pub as pub.name for pub in pubs track by pub.friendlyName" ng-change="changePub(selectedPub)"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button ng-if="selectedPub.name" type="submit" class="btn u-1/1">Let's Go Drinking</button></td>
+                </tr>
+            </table>
+        </form>
+    </div><!--
+--></div>
+</section>
+<!-- end of pick your pub -->

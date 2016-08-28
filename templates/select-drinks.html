@@ -1,0 +1,28 @@
+<!-- select your drinks -->
+<section class="js-drink-select page-wrap component component--border-black">
+    <div class="u-1/1 layout--flush layout--center"><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <span ng-click="cancelOrder()" class="icon icon__large icon--remove">Remove this round</span>
+        <p>Round 1</p>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <h2>Select Your Drinks</h2>
+    </div><!--
+--><div class="u-1/3 u-1/1-lap u-1/1-palm layout__item">
+        <form ng-submit="confirmOrder(totalCostOfTab)" class="u-1/1 ui-form">
+            <table>
+                <tr><th class="row-heading">Drink option</th><th class="row-heading">Quantity</th><th class="row-heading">Price</th></tr>
+                <tr ng-init="qty=0;" class="detail-row" ng-repeat="drink in drinks | drinksPackages:selectedPub.drinksPackage track by $index"><td><span ng-bind="drink.name"></span></td><td><input ng-model="qty" value="0" ng-change="updatePrice(drink.cost, qty, $index)" type="number" min="0" pattern="[0-9]*" class="digits u-1/2" placeholder="0"/></td><td><span>£</span><span ng-bind="drink.cost"></span></td></tr>
+                <tr>
+                    <td colspan="3">
+                        <table>
+                            <tr><td><span ng-click="cancelOrder()" class="btn js-cancel-order">Cancel</span></td><td><button type="submit" class="btn btn__breathe">Submit</button></td><td class="summary">Total: £<span ng-bind="totalCostOfRound | currency: ''"></span></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div><!--
+--></div>
+</section>
+<!-- end of select -->

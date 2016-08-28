@@ -1,0 +1,50 @@
+@import "../variables/spacing";
+/* form components */
+
+/* buttons - inherited from inuit css buttons */
+
+.btn {
+  border-radius: 5px;
+  margin: $gutter-small;
+  @include media-query("palm") {
+      margin: $gutter-small 0;
+  }
+}
+
+.btn__breathe {
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+/* form rows */
+
+.row-heading {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+  line-height: 1.4;
+}
+
+.detail-row {
+  height: 35px;
+}
+
+.ui-form {
+  select, option {
+    margin: $gutter-small 0;
+  }
+}
+
+/* input types */
+
+.digits {
+  width: $small-area;
+  height: $small-area;
+}
+
+/* details */
+
+.summary {
+  text-align: right;
+  padding: $gutter-small;
+}
