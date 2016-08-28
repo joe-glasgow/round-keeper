@@ -45,7 +45,6 @@ var RoundsController = /* @ngInject */ function ($scope, pubsModel, drinksModel)
             $scope.selectPub = true;
             $scope.orderNotInProgress = false
         }
-        return
     };
     // pub change
     $scope.changePub = function (selected) {
@@ -61,7 +60,7 @@ var RoundsController = /* @ngInject */ function ($scope, pubsModel, drinksModel)
         // assign once pub chosen
         $scope.currentOrder[$scope.selectedPub.friendlyName] = { drinks: [], amounts: [] };
         return false;
-    }
+    };
     // Update prices
     $scope.updatePrice = function (cost, amount, index) {
         // Keeping track of totals
@@ -104,7 +103,7 @@ var RoundsController = /* @ngInject */ function ($scope, pubsModel, drinksModel)
         $scope.totalCostOfRound = 0;
         // reset order
         $scope.orderNotInProgress = true;
-    }
+    };
     // Confirm order
     $scope.confirmOrder = function () {
         // Check if we can progress with the order
@@ -122,7 +121,7 @@ var RoundsController = /* @ngInject */ function ($scope, pubsModel, drinksModel)
         }
         // Break out
         return false
-    }
+    };
     // Cancel Order
     $scope.cancelOrder = function () {
         if (window.confirm('Do you really wish to cancel this order?')) {
@@ -131,7 +130,7 @@ var RoundsController = /* @ngInject */ function ($scope, pubsModel, drinksModel)
         } else {
             return false;
         }
-    }
+    };
 };
 // Export the module
 module.exports = RoundsController;
