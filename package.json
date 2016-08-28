@@ -4,12 +4,14 @@
   "description": "fantasy pub app",
   "main": "app.js",
   "scripts": {
-    "test": "none"
+    "test": "none",
+    "start": "python -m SimpleHTTPServe 8000"
   },
   "author": "Joe Morrison",
   "license": "ISC",
   "devDependencies": {
     "angular": "^1.5.8",
+    "bower": "^1.7.9",
     "browserify": "^13.1.0",
     "gulp": "^3.9.1",
     "gulp-ng-annotate": "^2.0.0",

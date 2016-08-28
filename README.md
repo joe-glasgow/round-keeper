@@ -11,6 +11,10 @@ Inside the root directory run the following command to install required packages
 
     npm install
 
+Following this some front end components (InuitCSS) is installed using bower - run the following:
+
+    bower install
+
  ## Build the application
 
 The application will first need to be build using two mains tasks in gulp, both of which can be triggered by running the following cli command in the root directory:
@@ -19,7 +23,12 @@ The application will first need to be build using two mains tasks in gulp, both 
 
 ## Start a server
 
-Spin up a localhost by using the following [python](https://www.python.org/) command:
+The simplest way to start up a server is using the npm start command inside the project.
+This assumes python is available on the command line.
+
+    npm start
+
+Alternatively, spin up a localhost by using the following [python](https://www.python.org/) command:
 
     python -m SimpleHTTPServer [port]
 
